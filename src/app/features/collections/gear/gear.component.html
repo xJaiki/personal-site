@@ -1,0 +1,15 @@
+<div style="display: flex">
+    <div class="rectangle"></div>
+    <div class="container">
+        <div class="info">
+            <h1>Tech things</h1>
+            <p class="info">Here you can find every random tech gear i have from chinese mouse to VR</p>
+            <div class="infoContainer">
+                <div class="data" *ngFor="let data of gearData">
+                    <img class="monsterImg" [src]="data.image">
+                    <h2 class="dataTitle">{{data["name"]}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

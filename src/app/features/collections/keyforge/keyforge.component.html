@@ -1,0 +1,18 @@
+<div style="display: flex">
+    <div class="rectangle"></div>
+    <div class="container">
+        <div class="info">
+            <h1>A dead game</h1>
+            <p class="info">You may asking "what is Keyforge?". Keyforge is a TCG (trading card game) that me and my friend started getting interesed in 2022. The particularity of this TCG is that unlike other ones like Yu-gi-oh or Magic, this is not a deck building based game. You buy a deck (36 cards) and that's your deck, you can't add or change cards, because every deck you buy is unique, because an algorithm create them to be unique.</p>
+            <div class="infoContainer">
+                <div class="data" *ngFor="let data of decksData">
+                    <img class="monsterImg" [src]="data.image">
+                    <h2 class="dataTitle">{{data["name"]}}</h2>
+                    <h3 class="dataCountry">Expansion: {{data["exp"]}}</h3>
+                    <h3 class="dataCountry">SAS: {{data["sas"]}}</h3>
+                    <a [href]="data.url">More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

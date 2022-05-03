@@ -1,0 +1,16 @@
+<div style="display: flex">
+    <div class="rectangle"></div>
+    <div class="container">
+        <div class="info">
+            <h1>Aluminum trash</h1>
+            <p class="info">Here it is, my {{monsterData.length}} Monster Enery's cans! I started this collection i think in 2013 when here in Italy there were only the classic one, the Khaos and the Lemon Rehab <span style="font-size: 0.4em;">good old days</span>.</p>
+            <div class="infoContainer">
+                <div class="data" *ngFor="let data of monsterData" >
+                    <img class="monsterImg" [src]="data.image">
+                    <h2 class="dataTitle">{{data["name"]}}</h2>
+                    <h3 class="dataCountry">Country: {{data["country"]}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

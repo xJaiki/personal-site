@@ -1,0 +1,31 @@
+nav {
+    margin-top: 3vw;
+    margin-left: 3vw;
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.3vw;
+
+}
+
+a {
+    font-size: 3vw;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+}
+
+.onit {
+    color: #FF5A62;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin-left: 6vw;;
+        margin-top: 3vw;
+    }
+    a {
+        font-size: 5vw;
+        font-weight: 200;
+    }
+  }

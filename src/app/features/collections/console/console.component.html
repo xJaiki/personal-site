@@ -1,0 +1,18 @@
+<div style="display: flex">
+    <div class="rectangle"></div>
+    <div class="container">
+        <div class="info">
+            <h1>PC master race?</h1>
+            <p class="info">A "collection" of all the console i had in my life, they are not a lot but it's something.</p>
+            <div class="infoContainer">
+                <div class="data" *ngFor="let data of consoleData">
+                    <img class="monsterImg" [src]="data.image">
+                    <h2 class="dataTitle">{{data["name"]}}</h2>
+                    <h3 class="dataCountry">Status: {{data["status"]}}</h3>
+                    <div class="separator"></div>
+                    <h3 class="dataCountry">{{data["desc"]}}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
