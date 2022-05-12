@@ -1,0 +1,18 @@
+<div style="display: flex">
+    <div class="rectangle"></div>
+    <div class="container">
+        <div class="info">
+            <h1>Beep boop i'm a robot</h1>
+            <p class="info">01100011 01101001 01100001 01101111 00100000 01100011 01101111 01101101 01100101 00100000 01110110 01100001 00111111</p>
+            <div class="infoContainer">
+                <div class="data" *ngFor="let data of devPrjData">
+                    <img class="monsterImg" [src]="data.image">
+                    <h2 class="dataTitle">{{data["name"]}}</h2>
+                    <div class="separator"></div>
+                    <h3 class="dataCountry">{{data["desc"]}}</h3>
+                    <a [href]="data.url">More...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

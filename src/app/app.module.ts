@@ -16,6 +16,10 @@ import { ProjectsNavComponent } from './Navigation/projects-nav/projects-nav.com
 import { SocialsNavComponent } from './Navigation/socials-nav/socials-nav.component';
 import { ConsoleComponent } from './features/collections/console/console.component';
 import { GearComponent } from './features/collections/gear/gear.component';
+import { DevComponent } from './features/projects/dev/dev.component';
+import { GraphicComponent } from './features/projects/graphic/graphic.component';
+import { OtherProjectsComponent } from './features/projects/other-projects/other-projects.component';
+import { SocialsComponent } from './features/socials/socials.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { GearComponent } from './features/collections/gear/gear.component';
     ProjectsNavComponent,
     SocialsNavComponent,
     ConsoleComponent,
-    GearComponent
+    GearComponent,
+    DevComponent,
+    GraphicComponent,
+    OtherProjectsComponent,
+    SocialsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,14 @@ import { AboutComponent } from './features/home/about/about.component';
 import { LikesComponent } from './features/home/likes/likes.component';
 import { OtherComponent } from './features/home/other/other.component';
 import { WelcomeComponent } from './features/home/welcome/welcome.component';
+import { DevComponent } from './features/projects/dev/dev.component';
+import { GraphicComponent } from './features/projects/graphic/graphic.component';
+import { OtherProjectsComponent } from './features/projects/other-projects/other-projects.component';
+import { SocialsComponent } from './features/socials/socials.component';
 import { CollectionsNavComponent } from './Navigation/collections-nav/collections-nav.component';
 import { HomeNavComponent } from './Navigation/home-nav/home-nav.component';
 import { ProjectsNavComponent } from './Navigation/projects-nav/projects-nav.component';
+import { SocialsNavComponent } from './Navigation/socials-nav/socials-nav.component';
 
 const routes: Routes = [{
   path: "",
@@ -61,28 +66,28 @@ const routes: Routes = [{
   component: ProjectsNavComponent,
   children: [{
     path: "",
-    redirectTo: "monster",
+    redirectTo: "dev",
     pathMatch: "full"
   },{
-    path: "monster",
-    component: MonsterComponent
+    path: "dev",
+    component: DevComponent
   },{
-    path: "keyforge",
-    component: KeyforgeComponent
+    path: "graphic",
+    component: GraphicComponent
+  },{
+    path: "otherProjects",
+    component: OtherProjectsComponent
   }]
 },{
   path: "socials",
-  component: CollectionsNavComponent,
+  component: SocialsNavComponent,
   children: [{
     path: "",
-    redirectTo: "monster",
+    redirectTo: "socials",
     pathMatch: "full"
   },{
-    path: "monster",
-    component: MonsterComponent
-  },{
-    path: "keyforge",
-    component: KeyforgeComponent
+    path: "socials",
+    component: SocialsComponent
   }]
 },{
     path: "**", 
