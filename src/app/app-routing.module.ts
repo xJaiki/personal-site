@@ -5,6 +5,7 @@ import { GearComponent } from './features/collections/gear/gear.component';
 import { KeyforgeComponent } from './features/collections/keyforge/keyforge.component';
 import { MonsterComponent } from './features/collections/monster/monster.component';
 import { AboutComponent } from './features/home/about/about.component';
+import { FaqComponent } from './features/home/faq/faq.component';
 import { LikesComponent } from './features/home/likes/likes.component';
 import { OtherComponent } from './features/home/other/other.component';
 import { WelcomeComponent } from './features/home/welcome/welcome.component';
@@ -38,8 +39,8 @@ const routes: Routes = [{
     path: "likes",
     component: LikesComponent
   },{
-    path: "other",
-    component: OtherComponent
+    path: "faq",
+    component: FaqComponent
   }]
 },{
   path: "collections",

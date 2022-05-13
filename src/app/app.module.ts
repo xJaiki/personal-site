@@ -20,6 +20,7 @@ import { DevComponent } from './features/projects/dev/dev.component';
 import { GraphicComponent } from './features/projects/graphic/graphic.component';
 import { OtherProjectsComponent } from './features/projects/other-projects/other-projects.component';
 import { SocialsComponent } from './features/socials/socials.component';
+import { FaqComponent } from './features/home/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { SocialsComponent } from './features/socials/socials.component';
     DevComponent,
     GraphicComponent,
     OtherProjectsComponent,
-    SocialsComponent
+    SocialsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
