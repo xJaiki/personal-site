@@ -15,7 +15,7 @@ export class DevComponent implements OnInit {
       image: "https://i.imgur.com/tvTmcI8.png",
       url: "https://github.com/xJaiki/zhome"
     },{
-      name: "pastelhole",
+      name: "pastelhome",
       type: "web dev",
       desc: "pastel home is a minimal startpage with colorful pastel theme and animations made with Angular.",
       image: "https://i.imgur.com/oQxNTU4.png",
